@@ -1,0 +1,255 @@
+@font-face {
+  font-family: "Arcade-N";
+  src: url("type/arcade_n-webfont.eot");
+  src: local("☺"),
+    url("type/arcade_n-webfont.woff") format("woff"),
+    url("type/arcade_n-webfont.ttf") format("opentype"),
+    url("type/arcade_n-webfont.svg#filename") format("svg");
+  }
+
+
+body {
+	margin: 0;
+    background-color: #501f84;
+    max0: 900px;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: flex-start;
+}
+
+.flexcontainer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.masthead {
+	padding: .5em;
+	height: 2.25em;
+	background-color: #501f84;
+    border-bottom: solid;
+    border-bottom-color: white;
+}
+
+.logo, .logo a, .nbn-logo {
+	height: 100%;
+}
+
+.wrapper {
+    margin: 3%;
+}
+
+button {
+    width: 70%;
+    height: 65px;
+    background-color: rgb(200,200,200);
+    border-radius: 15px;
+    font-family: "Arcade-N";
+    font-size: 1.6em;
+    color: white;
+    margin-left: 15%;
+}
+
+button:hover {
+    width: 70%;
+    height: 65px;
+    background-color: white;
+    border-radius: 15px;
+    font-family: "Arcade-N";
+    color: rgb(200,200,200);
+    font-size: 1.6em;
+    margin-left: 15%;
+}
+
+.game {
+    border-style: outset;
+    border-color: white;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    border-width: 4px;
+    background-color: white;
+}
+
+.game:hover {
+    border-color: black;
+}
+
+
+/*BODY STYLES*/
+/*article titles*/   
+    h1 {
+        font-family: "Arcade-N", sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+        color: rgba(200,200,200, .5);
+        margin-left: 6%;
+        line-height: 20px;
+    }
+
+/*subheads*/ 
+    h2 {
+        font-family: "Arcade-N", sans-serif;
+        font-weight: bold;
+        font-size: 4em;
+        color: white;
+        line-height: 0;
+        margin-bottom: 70px;
+        margin-left: 6%;
+    }
+
+    #wrapper {
+        align-items: center;
+    }
+
+/*image captions*/ 
+    h3 {
+
+    }
+
+/*image credit*/ 
+    h4 {
+
+    }
+
+/*first paragraph of any story*/ 
+    p .lead {
+
+    }
+
+/*article content*/ 
+    p {
+
+    }
+
+
+
+/*FOOTER STYLES*/
+.nbn-footer{
+    clear: both;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.nbn-footer.purple{
+    background-color: rgb(80,31,132);
+}
+
+.nbn-footer .footer-block{
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    vertical-align: middle;
+}
+
+@media print{
+    .nbn-footer{
+        font-size: 0.7em;
+        color: #888888;
+    }
+}
+
+.nbn-footer .footer-item{
+    margin: auto 0;
+    flex-grow: 1;
+    width: 30%;
+    min-width: 200px;
+} 
+
+.nbn-footer .footer-item, .nbn-footer .footer-item *{
+    color: white;
+}
+
+.nbn-footer p{
+    display: block;
+    margin-bottom: 0.6em;
+}
+.nbn-footer a{
+    text-decoration: underline;
+}
+
+.nbn-footer .producer {
+    font-weight: bold;
+    text-decoration: none;
+}
+.nbn-footer .producer:hover{
+    text-decoration: underline;
+}
+
+
+.nbn-footer .footer-left{
+    text-align: left;
+    flex-grow: 3;
+}
+
+.nbn-footer .footer-center{
+    text-align: center;
+    width: 5%;
+}
+
+.nbn-footer .footer-right{
+    text-align: right;
+    flex-grow: 3;
+}
+
+
+@media screen and (max-width: 1200px){
+    .nbn-footer .footer-block{
+        flex-flow: column;
+        vertical-align: middle;
+    }
+    .nbn-footer .footer-item{
+        width: 100%;
+        text-align: center;
+        min-height: 30px;
+        margin: 0;
+        padding: 0;
+    }
+    .nbn-footer .footer-item.footer-links{
+        font-size: 1em;
+    }
+}
+
+.nbn-footer .footer-links a{
+    color: white;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 10px 5px;
+}
+
+@media print{
+    .nbn-footer .footer-links{
+        display: none;
+    }
+}
+
+/* dealing with the fact that sometimes the footer needs more white space to just breattthhhheeeee */
+
+footer.nbn-footer{
+    margin-top: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.bottombody {
+    margin-top: 100px;
+    padding-top: 1em;
+    height: 2.25em;
+    background-color: black;
+    position: relative;
+    bottom: 0;
+}
